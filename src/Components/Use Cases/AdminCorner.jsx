@@ -20,7 +20,7 @@ const AdminCorner = () => {
     })
 
     const checkLogin=()=>{
-            if(key==='620138037430038'){
+            if(key===process.env.LoginKey){
                 console.log("Logged In");
                 setLoginStatus(true);
             }

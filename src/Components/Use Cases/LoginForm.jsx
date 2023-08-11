@@ -75,7 +75,7 @@ function LoginForm (){
         setMsg("Login Failed. Enter correct Details");
       });
 
-      sessionStorage.setItem("login_status", '620138037430038');
+      sessionStorage.setItem("login_status", process.env.LoginKey);
       console.log('Form submitted successfully');
     }
   };
