@@ -40,17 +40,20 @@ export default function ExecutiveCommittee() {
           }
         </div>
 
-        <div style={{display :fileDisplay? "block":"none",flexDirection:'column'}}>
-          <h4>कार्यकारी समिती वर्ष (Executive Committee Year)-{fileName.slice(2)}</h4>
-          
-              <object data={EC2014} title="Executive Committee file" width="760px" height="425px"
-              style={{display:fileName==="EC2014"? "block":"none"}} type="application/pdf"/>
 
-              <object data={EC2022} title="Executive Committee file" width="760px" height="425px"
-              style={{display:fileName==="EC2022"? "block":"none"}} type="application/pdf"/>
-              <br/>                    
-          <Button variant="contained" onClick={handleBack}>Back</Button>
-        </div>
+            <div style={{display :fileDisplay? "block":"none",flexDirection:'column'}}>
+              <h4>कार्यकारी समिती वर्ष (Executive Committee Year)-{fileName.slice(2)}</h4>
+              <div className='row container-fluid'>     
+              <object data={EC2014} title="Executive Committee file" width="auto" height="450px"
+                  style={{display:fileName==="EC2014"? "block":"none"}} type="application/pdf"/>
+
+              <object data={EC2022} title="Executive Committee file" width="auto" height="450px"
+                  style={{display:fileName==="EC2022"? "block":"none"}} type="application/pdf"/>
+            </div>
+            <br/>  
+            <Button variant="contained" onClick={handleBack}>Back</Button>
+  </div>
+        
 </div>
 
                 

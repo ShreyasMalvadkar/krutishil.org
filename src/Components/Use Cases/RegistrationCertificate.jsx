@@ -5,11 +5,11 @@ import CharRegCertificate from '../images/CharityCommissioner.jpg'
 const RegistrationCertificate = () => {
   return (
   <div className="container-fluid center">
-    <div className='row center' style={{ height:"538px"}}> 
-      <div className='col'>
+    <div className='row center'> 
+      <div className='col-lg-6'>
         <img src={AsstRegCertificate} className="img-fluid shadow" alt='AsstRegCertificate'/>
       </div>
-      <div className='col'>
+      <div className='col-lg-6'>
         <img src={CharRegCertificate} className="img-fluid shadow" alt='CharRegCertificate'/>
       </div>
     </div>

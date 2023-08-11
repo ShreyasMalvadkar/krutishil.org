@@ -43,7 +43,7 @@ const AuditReport = () => {
             <object data={AuditReport2017_18} title="Executive Committee file" width="auto" height="450px"
                 style={{display:fileName==="AuditReport2017-18"? "block":"none"}} />
 
-            <object data={AuditReport2021_22} title="Executive Committee file" width="auto" height="450"
+            <object data={AuditReport2021_22} title="Executive Committee file" width="auto" height="450px"
                 style={{display:fileName==="AuditReport2021-22"? "block":"none"}}/>
         </div>
         

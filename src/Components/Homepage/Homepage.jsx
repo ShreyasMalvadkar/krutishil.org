@@ -1,11 +1,6 @@
-import React, { useEffect, useState } from 'react'
-import LeftSideMenu from '../General/LeftSideMenu'
-import RightSideMenu from '../General/RightSIdeMenu'
-import Homenavbar from './Homenavbar'
+import React, { useEffect } from 'react'
 import ImageSlides from './ImageSlides'
 import "./Homepage.css";
-import Footer from '../General/Footer'
-import WelcomeModal from '../General/WelcomeModal'
 
 const Homepage = () => {
     useEffect(()=>{
