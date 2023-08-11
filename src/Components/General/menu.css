@@ -1,0 +1,25 @@
+.blink-text{
+    /* font-family: serif; */
+    color:red;
+    text-align: center;
+    animation: animate 1.5s linear infinite;
+  } 
+   
+  @keyframes animate{
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.9;
+    }
+    100%{
+      opacity: 0;
+    }
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

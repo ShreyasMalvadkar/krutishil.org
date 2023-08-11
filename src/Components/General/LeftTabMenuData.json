@@ -1,0 +1,42 @@
+[
+  {
+    "PageTitle": "Home",
+    "PageTitleMarathi":"मुख्यपृष्ठ",
+    "PageComponentAddress": "/"
+  },
+  {
+    "PageTitle": "Registration Certificate",
+    "PageTitleMarathi":"नोंदणी प्रमाणपत्र",
+    "PageComponentAddress": "/RegistrationCertificate"
+  },
+  {
+    "PageTitle": "Constitution",
+    "PageTitleMarathi":"संविधान",
+    "PageComponentAddress": "/mtn"
+  },
+  {
+    "PageTitle": "Election Rules",
+    "PageTitleMarathi":"निवडणूक नियम",
+    "PageComponentAddress": "/mtn"
+  },
+  {
+    "PageTitle": "Elecutive Committee", 
+    "PageTitleMarathi":"कार्यकारी समिती",
+    "PageComponentAddress": "/Executivecommittee"
+  },
+  {
+    "PageTitle": "Events",
+    "PageTitleMarathi":"कार्यक्रम",
+    "PageComponentAddress": "/mtn"
+  },
+  {
+    "PageTitle": "Secretary Report",
+    "PageTitleMarathi":"सचिव अहवाल",
+    "PageComponentAddress": "/Secretaryreport"
+  },
+  {
+    "PageTitle": "Give Suggestions",
+    "PageTitleMarathi":"सूचना द्या",
+    "PageComponentAddress": "/givesuggestions"
+  }
+]

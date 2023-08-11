@@ -1,0 +1,44 @@
+[
+    {
+      "PageTitle": "Pravartak",
+      "PageTitleMarathi":"प्रवर्तक",
+      "PageComponentAddress": "/pravartak"
+    },
+    {
+      "PageTitle": "Nirdesh Suchan",
+      "PageTitleMarathi":"निर्देश सुचन",
+      "PageComponentAddress": "/nirdesh"
+    },
+    {
+      "PageTitle": "Publications",
+      "PageTitleMarathi":"प्रकाशने",
+      "PageComponentAddress": "/mtn"
+    },
+    {
+      "PageTitle": "Updates",
+      "PageTitleMarathi":"अद्यतने", 
+      "PageComponentAddress": "/updates",
+      "Update":"New"
+    },
+    {
+      "PageTitle": "Photo Gallery",
+      "PageTitleMarathi":"फोटो गॅलरी",
+      "PageComponentAddress": "/mtn"
+    },
+    {
+      "PageTitle": "Useful Links",
+      "PageTitleMarathi":"उपयुक्त दुवे",
+      "PageComponentAddress": "/usefullink"
+    },
+    {
+      "PageTitle": "Audit Reports",
+      "PageTitleMarathi":"लेखापरीक्षण अहवाल",
+      "PageComponentAddress": "/auditreports"
+    },
+    {
+      "PageTitle": "Website Admin Login",
+      "PageTitleMarathi":"वेबसाइट प्रशासक लॉगिन",
+      "PageComponentAddress": "/adminlogin"
+    }
+  ]
+  
