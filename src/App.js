@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useNavigate } from "react";
 import { Route, Routes } from "react-router-dom";
 import Contacts from "./Components/General/Contacts";
 import MaintainancePage from "./Components/Maintainance/MaintainancePage";
@@ -24,18 +24,19 @@ import WelcomeModal from "./Components/General/WelcomeModal";
 
 export const App = () => {
   const [show, setShow] = useState(true);
+  const navigate=useNavigate();
 
     useEffect(() => {
-    setShow(true);
+      navigate('/');
+    //setShow(true);
   }, []);
   
-  useEffect(() => {
+  {/*useEffect(() => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
-      /* you can also use 'auto' behaviour in place of 'smooth' */
     });
-  }, []);
+  }, []);*/}
 
   const handleClose = () => {
     setShow(false);
