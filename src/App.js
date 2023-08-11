@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Contacts from "./Components/General/Contacts";
 import MaintainancePage from "./Components/Maintainance/MaintainancePage";
 import AdminCorner from "./Components/Use Cases/AdminCorner";
@@ -21,12 +21,10 @@ import Homepage from "./Components/Homepage/Homepage";
 import Footer from "./Components/General/Footer";
 
 export const App = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-      /* you can also use 'auto' behaviour in place of 'smooth' */
-    });
+    navigate("/");
   }, []);
 
   return (
