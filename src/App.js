@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Route, Routes, useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import Contacts from "./Components/General/Contacts";
 import MaintainancePage from "./Components/Maintainance/MaintainancePage";
 import AdminCorner from "./Components/Use Cases/AdminCorner";
@@ -13,35 +13,25 @@ import SecretaryReport from "./Components/Use Cases/SecretaryReport";
 import SuggestionForm from "./Components/Use Cases/SuggestionForm";
 import Updates from "./Components/Use Cases/Updates";
 import UseFulLinks from "./Components/Use Cases/UseFulLinks";
-// import ImageSlides from "./Components/Homepage/ImageSlides";
 import "./Components/Homepage/Homepage.css";
 import LeftSideMenu from "./Components/General/LeftSideMenu";
 import RightSideMenu from "./Components/General/RightSIdeMenu";
 import Homenavbar from "./Components/Homepage/Homenavbar";
 import Homepage from "./Components/Homepage/Homepage";
 import Footer from "./Components/General/Footer";
-import WelcomeModal from "./Components/General/WelcomeModal";
 
 export const App = () => {
-  const [show, setShow] = useState(true);
-  const navigate = useNavigate();
-
   useEffect(() => {
-    navigate("/");
-    //setShow(true);
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+      /* you can also use 'auto' behaviour in place of 'smooth' */
+    });
   }, []);
-
-  const handleClose = () => {
-    setShow(false);
-  };
-
-  setTimeout(function () {
-    setShow(false);
-  }, 1200);
 
   return (
     <div>
-      <div onClick={handleClose}>
+      <div>
         <Homenavbar />
         <div style={{ paddingTop: "20px" }} className="container-fluid">
           <div className="row center">
