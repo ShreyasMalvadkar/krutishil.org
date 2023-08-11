@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/krutishil.org/static/css/main.07a62dc5.css",
-    "main.js": "/krutishil.org/static/js/main.7c31f4cc.js",
+    "main.js": "/krutishil.org/static/js/main.0edaebb2.js",
     "static/media/AuditReport2021-22.pdf": "/krutishil.org/static/media/AuditReport2021-22.3c8aabf716ddd0fa6e1e.pdf",
     "static/media/AuditReport2017-18.pdf": "/krutishil.org/static/media/AuditReport2017-18.d10344322ad6b4f8c12b.pdf",
     "static/media/Nirdesh.pdf": "/krutishil.org/static/media/Nirdesh.951d4405453fd762679b.pdf",
@@ -23,10 +23,10 @@
     "static/media/Maintainance.jpg": "/krutishil.org/static/media/Maintainance.eed318c4d9f13c8e5fb9.jpg",
     "index.html": "/krutishil.org/index.html",
     "main.07a62dc5.css.map": "/krutishil.org/static/css/main.07a62dc5.css.map",
-    "main.7c31f4cc.js.map": "/krutishil.org/static/js/main.7c31f4cc.js.map"
+    "main.0edaebb2.js.map": "/krutishil.org/static/js/main.0edaebb2.js.map"
   },
   "entrypoints": [
     "static/css/main.07a62dc5.css",
-    "static/js/main.7c31f4cc.js"
+    "static/js/main.0edaebb2.js"
   ]
 }
