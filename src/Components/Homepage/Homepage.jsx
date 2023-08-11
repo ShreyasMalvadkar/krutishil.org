@@ -13,7 +13,7 @@ const Homepage = () => {
     },[])
 
   return (
-    <div onClick={handleClose} className='container-fluid'>
+    <div className='container-fluid'>
         <ImageSlides/>
     </div>
                 
