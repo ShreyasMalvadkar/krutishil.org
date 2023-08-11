@@ -55,7 +55,7 @@ export const App = () => {
               <LeftSideMenu />
             </div>
             <div className="col-xs-3 col-sm-6 col-md-6 col-lg-6 center">
-              <Routes>
+              <Routes basename="/krutishil.org">
                 <Route path="/" element={<Homepage />}></Route>
 
                 <Route
