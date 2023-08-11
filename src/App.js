@@ -1,5 +1,5 @@
-import React, { useEffect, useState,useNavigate } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Contacts from "./Components/General/Contacts";
 import MaintainancePage from "./Components/Maintainance/MaintainancePage";
 import AdminCorner from "./Components/Use Cases/AdminCorner";
@@ -24,19 +24,12 @@ import WelcomeModal from "./Components/General/WelcomeModal";
 
 export const App = () => {
   const [show, setShow] = useState(true);
-  const navigate=useNavigate();
+  const navigate = useNavigate();
 
-    useEffect(() => {
-      navigate('/');
+  useEffect(() => {
+    navigate("/");
     //setShow(true);
   }, []);
-  
-  {/*useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }, []);*/}
 
   const handleClose = () => {
     setShow(false);
