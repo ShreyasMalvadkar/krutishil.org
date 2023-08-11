@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/krutishil.org/static/css/main.07a62dc5.css",
+    "main.js": "/krutishil.org/static/js/main.7627e47c.js",
+    "static/media/AuditReport2021-22.pdf": "/krutishil.org/static/media/AuditReport2021-22.3c8aabf716ddd0fa6e1e.pdf",
+    "static/media/AuditReport2017-18.pdf": "/krutishil.org/static/media/AuditReport2017-18.d10344322ad6b4f8c12b.pdf",
+    "static/media/Nirdesh.pdf": "/krutishil.org/static/media/Nirdesh.951d4405453fd762679b.pdf",
+    "static/media/Pravartak.pdf": "/krutishil.org/static/media/Pravartak.0bb939ce5d9703a8b029.pdf",
+    "static/media/EC2014.pdf": "/krutishil.org/static/media/EC2014.74a91af01a2be7792437.pdf",
+    "static/media/AGM Pune 26-3-23 Itiwrutta.pdf": "/krutishil.org/static/media/AGM Pune 26-3-23 Itiwrutta.a628e16e026a78ac9269.pdf",
+    "static/media/Contacts.pdf": "/krutishil.org/static/media/Contacts.48162c1b034532f8f49c.pdf",
+    "static/media/logo.png": "/krutishil.org/static/media/logo.482da80c52b281e90a56.png",
+    "static/media/AdministrativeReport2022-23.pdf": "/krutishil.org/static/media/AdministrativeReport2022-23.df41bf9a618340941a79.pdf",
+    "static/media/MedicalForm.pdf": "/krutishil.org/static/media/MedicalForm.8727db2305b83f123f1e.pdf",
+    "static/media/mahamap_english.png": "/krutishil.org/static/media/mahamap_english.b0ca8344837d97afe7c3.png",
+    "static/media/EC2022.pdf": "/krutishil.org/static/media/EC2022.7db48806d534fc1a7192.pdf",
+    "static/media/Corrigendum 21-02-2023.pdf": "/krutishil.org/static/media/Corrigendum 21-02-2023.c3d951e5de59c0bd8af7.pdf",
+    "static/media/AssistantRegistrar.jpg": "/krutishil.org/static/media/AssistantRegistrar.50ca57ed28c3db799899.jpg",
+    "static/media/CharityCommissioner.jpg": "/krutishil.org/static/media/CharityCommissioner.48872ab0bea47734bcca.jpg",
+    "static/media/ksa_logo.jpg": "/krutishil.org/static/media/ksa_logo.80777a867c6e77708f63.jpg",
+    "static/media/ksa_logo-no-bg.png": "/krutishil.org/static/media/ksa_logo-no-bg.1658029afd4629e79d91.png",
+    "static/media/mahamap_marathi.jpg": "/krutishil.org/static/media/mahamap_marathi.3d749bad041488f958cb.jpg",
+    "static/media/Maintainance.jpg": "/krutishil.org/static/media/Maintainance.eed318c4d9f13c8e5fb9.jpg",
+    "index.html": "/krutishil.org/index.html",
+    "main.07a62dc5.css.map": "/krutishil.org/static/css/main.07a62dc5.css.map",
+    "main.7627e47c.js.map": "/krutishil.org/static/js/main.7627e47c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07a62dc5.css",
+    "static/js/main.7627e47c.js"
+  ]
+}
