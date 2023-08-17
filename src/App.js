@@ -19,6 +19,16 @@ import RightSideMenu from "./Components/General/RightSIdeMenu";
 import Homenavbar from "./Components/Homepage/Homenavbar";
 import Homepage from "./Components/Homepage/Homepage";
 import Footer from "./Components/General/Footer";
+import Ahmednagar from "./Components/SubCenters/Ahmednagar/Ahmednagar";
+import SubCenter from "./Components/SubCenters/SubCenter";
+import Bhandara from "./Components/SubCenters/Bhandara/Bhandara";
+import Pune from "./Components/SubCenters/Pune/Pune";
+import Nashik from "./Components/SubCenters/Nashik/Nashik";
+import Satara from "./Components/SubCenters/Satara/Satara";
+import Buldhana from "./Components/SubCenters/Buldhana/Buldhana";
+import Dhule from "./Components/SubCenters/Dhule/Dhule";
+import Malegaon from "./Components/SubCenters/Malegaon/Malegaon";
+import NoPravartak from "./Components/Maintainance/NoPravartak";
 
 export const App = () => {
   const navigate = useNavigate();
@@ -76,6 +86,38 @@ export const App = () => {
 
                 <Route path="/admincorner" element={<AdminCorner />}></Route>
 
+                <Route path="/noPravartak" element={<NoPravartak />}></Route>
+
+                <Route path="/subCenter" element={<SubCenter />}></Route>
+
+                <Route
+                  path="/subCenter/Ahmednagar"
+                  element={<Ahmednagar />}
+                ></Route>
+
+                <Route
+                  path="/subCenter/Bhandara"
+                  element={<Bhandara />}
+                ></Route>
+
+                <Route path="/subCenter/Pune" element={<Pune />}></Route>
+
+                <Route path="/subCenter/Nashik" element={<Nashik />}></Route>
+
+                <Route path="/subCenter/Satara" element={<Satara />}></Route>
+
+                <Route
+                  path="/subCenter/Buldhana"
+                  element={<Buldhana />}
+                ></Route>
+
+                <Route path="/subCenter/Dhule" element={<Dhule />}></Route>
+
+                <Route
+                  path="/subCenter/Malegaon"
+                  element={<Malegaon />}
+                ></Route>
+
                 <Route path="/mtn" element={<MaintainancePage />}></Route>
               </Routes>
             </div>
@@ -85,7 +127,6 @@ export const App = () => {
           </div>
         </div>
         <Footer />
-
         {/* <WelcomeModal show={show} /> */}
       </div>
     </div>

@@ -1,9 +1,5 @@
 import { Button } from '@mui/material'
 import React, { useState } from 'react'
-import Footer from '../General/Footer'
-import LeftSideMenu from '../General/LeftSideMenu'
-import RightSideMenu from '../General/RightSIdeMenu'
-import Homenavbar from '../Homepage/Homenavbar'
 import ECdata from './ExecutiveCommitteeData.json'
 import EC2014 from '../documents/EC2014.pdf'
 import EC2022 from '../documents/EC2022.pdf'
@@ -19,7 +15,6 @@ export default function ExecutiveCommittee() {
     const showFile=(event)=>{
         setFileDisplay(true);
         setFileName(event.target.value);
-        // setFileDisplay(true);
     }  
 
     const handleBack=()=>{
@@ -52,10 +47,7 @@ export default function ExecutiveCommittee() {
             </div>
             <br/>  
             <Button variant="contained" onClick={handleBack}>Back</Button>
-  </div>
-        
-</div>
-
-                
+  </div>  
+</div>        
   )
 }
