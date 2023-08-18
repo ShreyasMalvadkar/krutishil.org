@@ -1,44 +1,23 @@
 import { Button } from '@mui/material'
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import Footer from '../General/Footer'
-import LeftSideMenu from '../General/LeftSideMenu'
-import RightSideMenu from '../General/RightSIdeMenu'
-import Homenavbar from '../Homepage/Homenavbar'
+import { setLoginStatus } from '../../actions'
+
 
 const AdminCorner = () => {
 
-    const[key,setKey]=useState(0)
-    const[loginStatus,setLoginStatus]=useState(false);
+    const dispatch = useDispatch();
     const [suggestionData,setSuggestionData]=useState();
+    const loginStatus = useSelector((state) => state.login);
+
     const navigate=useNavigate();
 
 
-    useEffect(()=>{
-        fetchKey();
-    })
-
-    const checkLogin=()=>{
-            if(key===process.env.LoginKey){
-                console.log("Logged In");
-                setLoginStatus(true);
-            }
-            else{
-                setLoginStatus(false);
-                console.log("Not Logged In");
-            }
-    }
-
-    function fetchKey(){
-        const key=sessionStorage.getItem("login_status");
-        setKey(key);
-        checkLogin();
-    }
-
   const handleLogOut=()=>{
     sessionStorage.clear();
-    setLoginStatus(false);
+    dispatch(setLoginStatus(false));
     navigate('/');
   }
 
@@ -55,20 +34,17 @@ const AdminCorner = () => {
       }) 
   }
 
+  const handleLoginButton=()=>{
+    // navigate('/adminlogin')
+  }
+
   return (
     <div>
-        <Homenavbar />
-        <div style={{paddingTop:"20px"}} className="container-fluid">
-            <div className="row center">
-                <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 center">
-                    <LeftSideMenu/>
-                </div>
-                <div className="col-xs-3 col-sm-6 col-md-6 col-lg-6 center" >
-
+           <div className="container-fluid center" >
                     <div style={{display:loginStatus?"none":"block",color:'red'}} className="container-fluid">
                             <h3>Restricted Access - Only for Website Admin</h3>
+                            <Button className='p-2 m-2' variant='contained' onClick={handleLoginButton}>Admin Login</Button>
                     </div>
-{/* ------------------------------------ Admin Corner Code --------------------------------------------------------------------------- */}
                     <div style={{display:loginStatus?"block":"none"}} >
                         <h3>Website Admin
                         <Button variant="contained" color="error" onClick={handleLogOut} className="p-2 m-2">
@@ -103,16 +79,7 @@ const AdminCorner = () => {
                         </div>  
                         </div>
                     </div>
-{/* ------------------------------------ Admin Corner Code --------------------------------------------------------------------------- */}
-
-                <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 center">
-                    <RightSideMenu/>
-                </div>
-            </div>
-        </div>
-        <Footer/>
-
-    </div>
+</div>
   )
 }
 

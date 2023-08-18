@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import NoPravartak from '../Maintainance/NoPravartak';
 import './SubCenter.css'
-import subCentersData from '../Homepage/Subcenters.json'
+import subCentersData from '../General/Subcenters.json'
 import { Button } from '@mui/material';
 import { selectCity } from '../../actions';
 
@@ -12,7 +12,7 @@ import { selectCity } from '../../actions';
 function SubCenter() {
   
   const subCentersReady = [
-    'Ahmednagar','Bhandara','Pune','Nashik','Satara','Buldhana','Dhule','Malegaon'
+    'Ahmednagar','Bhandara','Pune','Nashik','Satara','Buldhana','Dhule','Malegaon','Thane','Raigad','Panvel'
   ];
 
   

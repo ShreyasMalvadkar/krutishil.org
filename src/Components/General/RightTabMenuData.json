@@ -38,7 +38,7 @@
     {
       "PageTitle": "Website Admin Login",
       "PageTitleMarathi":"वेबसाइट प्रशासक लॉगिन",
-      "PageComponentAddress": "/adminlogin"
+      "PageComponentAddress": "/adminPage"
     }
   ]
   

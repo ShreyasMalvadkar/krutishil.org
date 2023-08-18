@@ -5,6 +5,7 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import PermMediaIcon from '@mui/icons-material/PermMedia';
 import { useState } from 'react';
 import Bhandara_report from './BhandaraReport.pdf'
+import { NavLink } from 'react-router-dom';
 
 function Bhandara() {
   const imagePaths = [
@@ -31,7 +32,7 @@ function Bhandara() {
         <div>
           <Button variant='contained' className='p-2 mb-3' endIcon={<PermMediaIcon/>} onClick={handleShowDoc}>View Images</Button>
           <div className='row'>
-            <object data={Bhandara_report} width='700px' height='450px' alt='bhandara pdf'/>          
+            <object data={Bhandara_report} width='700px' height='450px' alt='bhandara doc'/>          
           </div>
         </div>
         
@@ -42,6 +43,8 @@ function Bhandara() {
         <ImageGallery images={imagePaths}/>
       </div>
       }
+       <hr/>
+          <NavLink to='/subCenter'><Button variant="contained">Back</Button></NavLink>
     </div>
   )
 }

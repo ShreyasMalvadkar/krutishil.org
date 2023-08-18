@@ -2,10 +2,8 @@ import React, { useEffect } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import Contacts from "./Components/General/Contacts";
 import MaintainancePage from "./Components/Maintainance/MaintainancePage";
-import AdminCorner from "./Components/Use Cases/AdminCorner";
 import AuditReport from "./Components/Use Cases/AuditReport";
 import ExecutiveCommittee from "./Components/Use Cases/ExecutiveCommittee";
-import LoginForm from "./Components/Use Cases/LoginForm";
 import Nirdesh from "./Components/Use Cases/Nirdesh";
 import Pravartak from "./Components/Use Cases/Pravartak";
 import RegistrationCertificate from "./Components/Use Cases/RegistrationCertificate";
@@ -29,10 +27,17 @@ import Buldhana from "./Components/SubCenters/Buldhana/Buldhana";
 import Dhule from "./Components/SubCenters/Dhule/Dhule";
 import Malegaon from "./Components/SubCenters/Malegaon/Malegaon";
 import NoPravartak from "./Components/Maintainance/NoPravartak";
+import Thane from "./Components/SubCenters/Thane/Thane";
+import Raigad from "./Components/SubCenters/Panvel Raigad/Raigad";
+import Panvel from "./Components/SubCenters/Panvel Raigad/Panvel";
+import AdminPage from "./Components/Admin/AdminPage";
+import LoginForm from "./Components/Admin/LoginForm";
+import { useSelector } from "react-redux";
+import AdminNavbar from "./Components/Admin/AdminNavbar";
 
 export const App = () => {
   const navigate = useNavigate();
-
+  const loginStatus = useSelector((state) => state.login);
   useEffect(() => {
     navigate("/");
   }, []);
@@ -40,7 +45,8 @@ export const App = () => {
   return (
     <div>
       <div>
-        <Homenavbar />
+        {!loginStatus && <Homenavbar />}
+        {loginStatus && <AdminNavbar />}
         <div style={{ paddingTop: "20px" }} className="container-fluid">
           <div className="row center">
             <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 center">
@@ -82,9 +88,9 @@ export const App = () => {
                   element={<SuggestionForm />}
                 ></Route>
 
-                <Route path="/adminlogin" element={<LoginForm />}></Route>
+                <Route path="/adminPage" element={<AdminPage />}></Route>
 
-                <Route path="/admincorner" element={<AdminCorner />}></Route>
+                <Route path="/adminlogin" element={<LoginForm />}></Route>
 
                 <Route path="/noPravartak" element={<NoPravartak />}></Route>
 
@@ -118,9 +124,16 @@ export const App = () => {
                   element={<Malegaon />}
                 ></Route>
 
+                <Route path="/subCenter/Thane" element={<Thane />}></Route>
+
+                <Route path="/subCenter/Raigad" element={<Raigad />}></Route>
+
+                <Route path="/subCenter/Panvel" element={<Panvel />}></Route>
+
                 <Route path="/mtn" element={<MaintainancePage />}></Route>
               </Routes>
             </div>
+
             <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3 center">
               <RightSideMenu />
             </div>

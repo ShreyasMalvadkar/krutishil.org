@@ -37,6 +37,7 @@ function Ahmednagar() {
       <div className='row'>
         <ImageGallery images={imagePaths}/>
       </div>
+      <hr/>
       <Button variant="contained" onClick={handleBack}>Back</Button>
     </div>
   )

@@ -6,6 +6,7 @@ import PermMediaIcon from '@mui/icons-material/PermMedia';
 import { useState } from 'react';
 import SataraEvents from './SataraEvents.pdf'
 import SataraMeeting from './SataraMeeting.pdf'
+import { NavLink } from 'react-router-dom';
 
 function Satara() {
   const imagePaths = [
@@ -66,6 +67,8 @@ function Satara() {
         <ImageGallery images={imagePaths}/>
       </div>
       }
+       <hr/>
+          <NavLink to='/subCenter'><Button variant="contained">Back</Button></NavLink>
     </div>
   )
 }

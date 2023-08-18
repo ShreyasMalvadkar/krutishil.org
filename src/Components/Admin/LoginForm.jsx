@@ -1,14 +1,17 @@
 import { Button } from '@mui/material';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { setLoginStatus } from '../../actions';
 import '../General/modal.css';
 import './loginform.css';
 
 
 function LoginForm (){
-
-  const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const navigate=useNavigate();
+  
   const [msg,setMsg]=useState("");
 
   const [formData, setFormData] = useState({
@@ -29,15 +32,8 @@ function LoginForm (){
     });
   };
 
-  useEffect(()=>{
-    if (sessionStorage.getItem('login_status') !== null) 
-      navigate('/admincorner')
-  })
-
-
   const handleSubmit = (event) => {
     event.preventDefault();
-
     // Validate the form data
     const newErrors = {};
     if (!formData.username) {
@@ -56,13 +52,13 @@ function LoginForm (){
     if (Object.keys(newErrors).length === 0) {
       // Your form submission logic here
 
-      axios.post('https://krutishil.netlify.app/api/login', formData)
+      axios.post('http://localhost:3001/api/login', formData)
       .then(function (response) {
         console.log(response.status);
         if(response.status===200)
         {
           setMsg("");
-          navigate('/admincorner');
+          dispatch(setLoginStatus(true));
         }
         else
         {
@@ -72,11 +68,11 @@ function LoginForm (){
       })
       .catch(function (error) {
         console.log(error);
-        setMsg("Login Failed. Enter correct Details");
+        setMsg("Login Failed. Someting Went Wrong.");
       });
 
-      sessionStorage.setItem("login_status", process.env.LoginKey);
-      console.log('Form submitted successfully');
+      // sessionStorage.setItem("login_status", process.env.LoginKey);
+      // console.log('Form submitted successfully');
     }
   };
 
@@ -86,9 +82,9 @@ function LoginForm (){
 
 
   return (
-      <div className='bgImg center container-fluid d-flex align-items-center align-items-center justify-content-center'>
+      <div className='bgImg center container-fluid p-5'>
         <div className='shadow p-2 glass-effect'>
-            <h2>Admin Login</h2>
+            <h2>Login</h2>
             <form onSubmit={handleSubmit}>
                 <table className='table table-light table-stripped shadow'>
                   <th colSpan={2} style={{color:"red"}}>{msg}</th>

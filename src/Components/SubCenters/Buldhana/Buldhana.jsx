@@ -1,4 +1,6 @@
+import { Button } from '@mui/material';
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import ImageGallery from '../ImageGallery'
 
 function Buldhana() {
@@ -15,6 +17,8 @@ function Buldhana() {
       <hr/>
       <div className='row'>
         <ImageGallery images={imagePaths}/>
+        <hr/>
+          <NavLink to='/subCenter'><Button variant="contained">Back</Button></NavLink>
       </div>
     </div>
   )

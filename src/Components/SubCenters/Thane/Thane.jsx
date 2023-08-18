@@ -3,30 +3,29 @@ import React from 'react'
 import { NavLink } from 'react-router-dom';
 import ImageGallery from '../ImageGallery'
 
-function Pune() {
+function Thane() {
   const imagePaths = [
-    './Pune/images/PuneMeet.png',
-    './Pune/images/Pune-1.jpeg',
-    './Pune/images/Pune-2.jpeg',
-    './Pune/images/Pune-3.jpeg',
-    './Pune/images/Pune-4.jpeg',
-    './Pune/images/Pune-5.jpeg',
-    './Pune/images/Pune-6.jpeg',
-    './Pune/images/Pune-7.jpeg',
+    './Thane/images/Thane-1.jpeg',
+    './Thane/images/Thane-2.jpeg',
+    './Thane/images/Thane-3.jpeg',
+    './Thane/images/Thane-4.jpeg',
+    './Thane/images/Thane-5.jpeg',
+    './Thane/images/Thane-6.jpeg',
+    './Thane/images/Thane-7.jpeg',
+    './Thane/images/Thane-8.jpeg',
+    './Thane/images/Thane-9.jpeg',
     // Add more image paths here
   ];
 
   return (
     <div className='container-fluid'>
-      <h2>Sub Center - Pune</h2>
+      <h2>Sub Center - Thane</h2>
       <hr/>
-      <div className='row'>
         <ImageGallery images={imagePaths}/>
         <hr/>
           <NavLink to='/subCenter'><Button variant="contained">Back</Button></NavLink>
-      </div>
     </div>
   )
 }
 
-export default Pune
+export default Thane

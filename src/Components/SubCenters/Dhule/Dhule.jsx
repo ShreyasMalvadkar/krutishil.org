@@ -1,4 +1,6 @@
+import { Button } from '@mui/material';
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 import ImageGallery from '../ImageGallery'
 
 function Dhule() {
@@ -17,6 +19,8 @@ function Dhule() {
       <div className='row'>
         <ImageGallery images={imagePaths}/>
       </div>
+      <hr/>
+          <NavLink to='/subCenter'><Button variant="contained">Back</Button></NavLink>
     </div>
   )
 }
