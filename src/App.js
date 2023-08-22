@@ -34,6 +34,7 @@ import AdminPage from "./Components/Admin/AdminPage";
 import LoginForm from "./Components/Admin/LoginForm";
 import { useSelector } from "react-redux";
 import AdminNavbar from "./Components/Admin/AdminNavbar";
+import AboutUs from "./Components/General/AboutUs";
 
 export const App = () => {
   const navigate = useNavigate();
@@ -62,6 +63,8 @@ export const App = () => {
                 ></Route>
 
                 <Route path="/Contacts" element={<Contacts />}></Route>
+
+                <Route path="/aboutUs" element={<AboutUs />}></Route>
 
                 <Route
                   path="/Executivecommittee"

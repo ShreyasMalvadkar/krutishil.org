@@ -28,7 +28,7 @@ const Homenavbar = () => {
           <NavLink className="nav-link active center" to="/Contacts" title='Contact Page'><ContactPageIcon color="primary" />संपर्क (Contacts)</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink className="nav-link active center" to="#" title='About Us'><InfoIcon color="primary" />आमच्याबद्दल (About Us)</NavLink>
+          <NavLink className="nav-link active center" to="/aboutUs" title='About Us'><InfoIcon color="primary" />आमच्याबद्दल (About Us)</NavLink>
         </li>
         {/* <li className="nav-item dropdown center">
           <NavLink className="nav-link dropdown-toggle center" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" title='Sub Centers' aria-expanded="false">

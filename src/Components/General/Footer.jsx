@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import "../Homepage/Homepage.css";
@@ -7,8 +8,9 @@ function Footer() {
 <footer className="text-center shadow" style={{paddingTop:"10px"}}>
   {/* <!-- Grid container --> */}
   <div className="container-fluid">
-    <h4>नोंदणीकृत कार्यालय : संतेश्वर सोसायटी, फ्लॅट नं.7, 106/3, डॉ.केतकर मार्ग, जुन्या कलमाडी शाळेसमोर, एरंडवणा, पुणे 411004</h4>
-    <h5>(शासन मान्यता सहाय्यक निबंधक, पुणे नोंदणी क्र.1151 दि.31/5/2014 व धर्मादाय आयुक्त, पुणे नोंदणी क्र. फ-48300 दि.23/03/2017)</h5>
+  <p>
+    <h4>नोंदणीकृत कार्यालय : पुष्पमेध को ऑप हाऊसिंग सोसायटी प्लॉट न ३९/४० सहकार नगर, पुणे - ४११००९</h4>
+    <h5>(शासन मान्यता सहाय्यक निबंधक, पुणे नोंदणी क्र.1151 दि.31/5/2014 व धर्मादाय आयुक्त, पुणे नोंदणी क्र. फ-48300 दि.23/03/2017)</h5></p>
     {/* <!-- Section: Social media --> */}
     <section >
       {/* <!-- Facebook --> */}
@@ -69,6 +71,7 @@ function Footer() {
     </section>
     {/* <!-- Section: Social media --> */}
       {/* <!-- Copyright --> */}
+      
   <div className="text-dark p-1">
     ©{new Date().getFullYear()}&nbsp;<NavLink className="text-dark" to="/">Krutishil Organization</NavLink>
   </div>

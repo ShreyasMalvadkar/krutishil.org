@@ -1,5 +1,6 @@
 import { Button } from '@mui/material';
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Footer from '../General/Footer';
 import LeftSideMenu from '../General/LeftSideMenu';
 import RightSideMenu from '../General/RightSIdeMenu';
@@ -9,6 +10,8 @@ const SuggestionForm = () => {
   const [name, setName] = useState('');
   const [suggestion, setSuggestion] = useState('');
   const [error, setError] = useState('');
+
+  const navigate=useNavigate();
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -38,7 +41,7 @@ const SuggestionForm = () => {
   
     // Send the data to the server
     try {
-      const response = await fetch('https://krutishil.netlify.app/api/saveSuggestion', {
+      const response = await fetch('http://localhost:3001/api/saveSuggestion', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -47,9 +50,10 @@ const SuggestionForm = () => {
       });
 
       // Handle the response from the server if necessary
-      if (response.ok) {
+      if (response.status===200) {
         // Data was successfully saved
         console.log('Data was saved successfully.');
+        navigate('/');
       } else {
         // Handle error responses from the server
         console.error('Failed to save data. Please try again.');
