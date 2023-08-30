@@ -7,6 +7,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import "./Homepage.css";
 import krutishilLogo from "../images/main_logo.png"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import FeedIcon from '@mui/icons-material/Feed';
 
 
 const Homenavbar = () => {
@@ -45,6 +46,9 @@ const Homenavbar = () => {
         <li className="nav-item">
           <NavLink className="nav-link active center" to="/subCenter" title='About Us'><LocationOnIcon color="primary" />उपकेंद्रे (Sub Centers)</NavLink>
         </li>
+        {/* <li className="nav-item">
+          <NavLink className="nav-link active center" to="/membership" title='About Us'><FeedIcon color="primary" />Membership</NavLink>
+        </li> */}
       </ul>
 
       <div class="d-flex p-2 shadow rounded" style={{backgroundColor:"#D3D3D3"}}>

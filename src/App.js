@@ -35,6 +35,7 @@ import LoginForm from "./Components/Admin/LoginForm";
 import { useSelector } from "react-redux";
 import AdminNavbar from "./Components/Admin/AdminNavbar";
 import AboutUs from "./Components/General/AboutUs";
+import MembershipForm from "./Components/Membership/MembershipForm";
 
 export const App = () => {
   const navigate = useNavigate();
@@ -98,6 +99,8 @@ export const App = () => {
                 <Route path="/noPravartak" element={<NoPravartak />}></Route>
 
                 <Route path="/subCenter" element={<SubCenter />}></Route>
+
+                <Route path="/membership" element={<MembershipForm />}></Route>
 
                 <Route
                   path="/subCenter/Ahmednagar"

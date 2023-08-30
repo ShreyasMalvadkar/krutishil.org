@@ -61,7 +61,7 @@ function SubCenter() {
         
         <input
         type="text"
-        placeholder="Search..."
+        placeholder="Search Subcenter"
         value={searchTerm}
         onChange={handleInputChange}
       />

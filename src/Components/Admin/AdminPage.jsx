@@ -33,33 +33,34 @@ function AdminPage() {
 
         {loginStatus && <div>Admin Logged In</div>}
 
-        <>
-        <Button variant="contained" onClick={handleGetSuggestions} className="p-2 m-2">View All Suggestions</Button>
-                        <Button variant="contained" className="p-2 m-2">Add Event</Button>
-                        <Button variant="contained" className="p-2 m-2">Add Information</Button>
-                        <div style={{display:suggestionData?"block":"none"}}>
-                            <br/>
-                            <p><b>Total Suggestions - {suggestionData?.data?.suggestions.length}</b></p>
-                            <table className='table table-striped table-light table-hover table-bordered shadow '>
+        {loginStatus &&<>
+          <Button variant="contained" onClick={handleGetSuggestions} className="p-2 m-2">View All Suggestions</Button>
+            <Button variant="contained" className="p-2 m-2">Add Event</Button>
+            <Button variant="contained" className="p-2 m-2">Add Information</Button>
+              <div style={{display:suggestionData?"block":"none"}}>
+              <br/>
+              <p><b>Total Suggestions - {suggestionData?.data?.suggestions.length}</b></p>
+              <table className='table table-striped table-light table-hover table-bordered shadow '>
+                                 
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Date (Time)</th>
+                <th>Suggestion</th>
                                 
-                                        <th>Sr. No.</th>
-                                        <th>Name</th>
-                                        <th>Date (Time)</th>
-                                        <th>Suggestion</th>
-                                
-                                <tbody>
-                                    {suggestionData?.data?.suggestions.map((data,index)=>{
-                                        return(<tr key={index}>
-                                            <td>{index+1}</td>
-                                                <td>{data.name}</td>
-                                                <td>{data.date.slice(0,10)}<br/>({data.date.slice(11,19)})</td>
-                                                <td>{data.suggestion}</td>
-                                            </tr>) 
-                                    })}
-                                </tbody>
-                            </table>    
-                        </div>  
-        </>
+                <tbody>
+                  {suggestionData?.data?.suggestions.map((data,index)=>{
+                    return(<tr key={index}>
+                      <td>{index+1}</td>
+                      <td>{data.name}</td>
+                      <td>{data.date.slice(0,10)}<br/>({data.date.slice(11,19)})</td>
+                      <td>{data.suggestion}</td>
+                      </tr>) 
+                    })}
+                </tbody>
+              </table>    
+            </div>  
+          </>
+        }
     </div>
   )
 }
