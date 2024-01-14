@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/krutishil.org/static/css/main.8f38be33.css",
-    "main.js": "/krutishil.org/static/js/main.357845ec.js",
+    "main.js": "/krutishil.org/static/js/main.cbf7fa23.js",
     "static/media/NashikReport.pdf": "/krutishil.org/static/media/NashikReport.d208177c884ae8dab080.pdf",
     "static/media/NashikEvents.pdf": "/krutishil.org/static/media/NashikEvents.55af483d329e07e63cf8.pdf",
     "static/media/Dhule-2.png": "/krutishil.org/static/media/Dhule-2.476d2a2ca0fbf964ff6b.png",
@@ -98,10 +98,10 @@
     "static/media/Malegaon-2.jpeg": "/krutishil.org/static/media/Malegaon-2.6b02e84fc7d26d4b2d8e.jpeg",
     "index.html": "/krutishil.org/index.html",
     "main.8f38be33.css.map": "/krutishil.org/static/css/main.8f38be33.css.map",
-    "main.357845ec.js.map": "/krutishil.org/static/js/main.357845ec.js.map"
+    "main.cbf7fa23.js.map": "/krutishil.org/static/js/main.cbf7fa23.js.map"
   },
   "entrypoints": [
     "static/css/main.8f38be33.css",
-    "static/js/main.357845ec.js"
+    "static/js/main.cbf7fa23.js"
   ]
 }
